@@ -142,3 +142,4 @@ dmypy.json
 
 jsons/person.json
 resume.pdf
+failed/*
