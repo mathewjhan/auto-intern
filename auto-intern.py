@@ -24,7 +24,7 @@ def run():
             print()
         except:
             print("Oops! Something went wrong. Skipping URL...")
-            print(url, file=lever_failed)
+            print(url.strip(), file=lever_failed)
 
     lever_failed.close()
 
