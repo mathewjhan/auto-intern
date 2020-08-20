@@ -17,7 +17,7 @@ Python packages can be installed via `pip install -r requirements.txt`. Recommen
 1. Copy over jsons/template.json and fill out with your information
 2. Add your resume to the root directory of the project and name it `resume.pdf`
 3. Optionally run `python scrapers/lever_scraper.py` on a website with internship URLs (recommended [this](https://raw.githubusercontent.com/Pitt-CSC/Summer2021-Internships/master/README.md))
-4. Run `python YOUR_JSON.json URL_LIST.txt`
+4. Run `python auto-intern.py YOUR_JSON.json URL_LIST.txt`
 
 ## Platform support
 

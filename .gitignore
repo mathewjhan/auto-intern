@@ -142,4 +142,5 @@ dmypy.json
 
 jsons/person.json
 resume.pdf
+lever_scraped.txt
 failed/*
