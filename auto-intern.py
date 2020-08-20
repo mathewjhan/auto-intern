@@ -1,15 +1,24 @@
 from applicant import Applicant
 from lever import Auto_Lever
 from greenhouse import Auto_Greenhouse
+import argparse
 import os
+import sys
 
 def run():
+    if(len(sys.argv) != 3):
+        print("Too few/not enough arguments.")
+        return
+
+    json = sys.argv[1]
+    lever_list = sys.argv[2]
+
     applicant = Applicant()
-    applicant.read_from_json('jsons' + os.sep + 'person.json')
+    applicant.read_from_json(json)
 
     auto_lever = Auto_Lever()
 
-    lever_urls = open('lists' + os.sep + 'lever.txt', 'r').readlines()
+    lever_urls = open(lever_list, 'r').readlines()
     lever_failed = open('failed' + os.sep + 'lever_failed.txt', 'w')
 
     for url in lever_urls:
