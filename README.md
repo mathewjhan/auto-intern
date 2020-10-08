@@ -21,6 +21,7 @@ Python packages can be installed via `pip install -r requirements.txt`. Recommen
 
 ## Todo
 
+- Improve overall pipeline and structure
 - Semi-automate Greenhouse using chromedriver because they use a captcha
 - Create a regex to scrape Greenhouse links off websites to populate URL list
 
